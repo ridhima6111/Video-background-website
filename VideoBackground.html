@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Euron Travels</title>
+    <link rel="stylesheet" href="VideoBackground.css">
+</head>
+
+<body>
+    <section class="showcase">
+        <header>
+            <h1 class="logo">Euron Travels</h1>
+            <div class="toggle"></div>
+        </header>
+        <video src="images/video.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Helping You</h2>
+            <h3>Explore The World...</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eos suscipit dicta in, aut ipsum
+                velit nulla libero voluptate consequatur aperiam autem laborum perspiciatis sapiente nesciunt officiis
+                quasi cumque accusamus saepe minus ad. Eos molestiae dolor, deserunt laudantium corporis quibusdam?
+            </p>
+            <a href="//">Explore</a>
+        </div>
+
+        <ul class="social">
+            <li><a href="//"><img src="images/fb.svg" alt="" width="40px"></a></li>
+            <li><a href="//"><img src="images/tw.png" alt="" width="55px"></a></li>
+            <li><a href="//"><img src="images/ig.png" alt="" width="35px"></a></li>
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Adventure tours</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+</body>
+
+</html>
